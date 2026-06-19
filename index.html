@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>신무결 이력서</title>
+    <link rel="stylesheet" href="static/css/style.css" />
+    <script defer src="static/js/app.js"></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <main class="resume-paper" aria-label="신무결 개발자 이력서">
+        <div class="document-actions">
+          <p class="document-note">개발자 이력서 | 1 / 2</p>
+          <button class="print-button" type="button" data-print-button>
+            PDF 저장
+          </button>
+        </div>
+
+        <header class="resume-header">
+          <div class="profile-photo" aria-label="프로필 이미지">
+            <img
+              src="static/img/profile.png"
+              alt="신무결 프로필 사진"
+              data-profile-image
+            />
+            <span class="profile-initials" aria-hidden="true">SMG</span>
+          </div>
+
+          <div class="profile-main">
+            <p class="resume-label">Resume</p>
+            <h1>신무결</h1>
+            <p class="desired-role">AI 서비스 / 백엔드 개발자</p>
+          </div>
+
+          <address class="contact-list">
+            <a href="mailto:tlsanruf123@gmail.com">
+              <span>Email</span>
+              tlsanruf123@gmail.com
+            </a>
+            <a
+              href="https://github.com/weoqpur"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>GitHub</span>
+              github.com/weoqpur
+            </a>
+            <a
+              href="https://velog.io/@weoqpur"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>Blog</span>
+              velog.io/@weoqpur
+            </a>
+            <a href="tel:010-8434-2186">
+              <span>Phone</span>
+              010-8434-2186
+            </a>
+          </address>
+        </header>
+
+        <section class="resume-section" aria-labelledby="intro-title">
+          <h2 id="intro-title" class="section-title">자기소개</h2>
+          <div class="intro-copy">
+            <p>
+              마이스터고에서 생성형 AI와 컴퓨터 비전 모델을 학습한 경험을
+              바탕으로 웹 백엔드와 서버 배포를 함께 익히고 있는 개발자
+              지망생입니다. GAN 모델을 중심으로 pix2pix, StyleGAN 같은 이미지
+              생성/변환 모델을 공부했고, segmentation과 object detection 모델도
+              함께 학습했습니다.
+            </p>
+            <p>
+              최근에는 AI 모델이 단순한 실험 코드에 머무르지 않고 실제 사용자가
+              접근할 수 있는 서비스가 되려면 어떤 백엔드 구조와 배포 환경이
+              필요한지에 집중하고 있습니다. FastAPI 기반 서버 구현,
+              MariaDB/MySQL 데이터베이스, JavaScript를 이용한 화면 연동을
+              실습하며 서비스의 기본 흐름을 익혔습니다.
+            </p>
+            <p>
+              Linux 서버 환경에서는 Nginx, Uvicorn, systemd를 이용한 FastAPI
+              애플리케이션 실행 구조와 Cloudflare Tunnel을 통한 외부 접속 구성을
+              학습했습니다. 3-Tier 구조로 구성한 웹 서비스와 YOLO 모델 웹 데모를
+              배포해 보며 로컬 개발 환경과 서버 실행 환경의 차이를 직접 확인하고
+              있습니다.
+            </p>
+            <p class="intro-highlight">
+              목표는 AI 모델을 잘 다루는 것을 넘어, 모델을 안정적인 웹 서비스와
+              서버 구조로 연결할 수 있는 백엔드 개발자가 되는 것입니다.
+            </p>
+          </div>
+        </section>
+
+        <section class="resume-section" aria-labelledby="summary-title">
+          <h2 id="summary-title" class="section-title">경력/학습 요약</h2>
+          <div class="summary-grid">
+            <article class="summary-item">
+              <p class="period">Web / Server</p>
+              <h3>한컴 아카데미 웹/서버 과정</h3>
+              <p>
+                FastAPI 기반 웹 애플리케이션, MariaDB 연동, Linux 서버 기본
+                명령, Nginx reverse proxy, Uvicorn 실행, systemd 서비스 등록을
+                실습했습니다.
+              </p>
+              <ul>
+                <li>Front-WAS-DB 3-Tier 구조와 Cloudflare Tunnel 연동</li>
+                <li>YOLO 모델 웹 데모 배포 경험</li>
+                <li>Docker/UTM 기반 로컬 서버 환경 학습</li>
+                <li>AWS Lightsail 인스턴스에 배포</li>
+              </ul>
+            </article>
+
+            <article class="summary-item">
+              <p class="period">Generative AI / Computer Vision</p>
+              <h3>마이스터고 생성형 AI/컴퓨터 비전 학습 경험</h3>
+              <p>
+                GAN 기반 생성형 AI를 중심으로 이미지 생성과 이미지 변환 모델의
+                구조를 학습했습니다. 이와 함께 segmentation, object detection
+                모델을 공부하며 AI 모델 결과를 서비스 기능으로 연결할 때 필요한
+                데이터 흐름을 학습하고 있습니다.
+              </p>
+              <ul>
+                <li>GAN, pix2pix, StyleGAN 기반 생성형 AI 학습</li>
+                <li>Segmentation, object detection 모델 학습</li>
+                <li>
+                  PyTorch, OpenCV, Pandas를 이용한 모델 실습 및 데이터 처리
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="resume-section" aria-labelledby="experience-title">
+          <h2 id="experience-title" class="section-title">대표 경험</h2>
+          <ol class="experience-list">
+            <li>
+              <h3>Front-WAS-DB 3-Tier 웹 서비스 구축 및 외부 접속 구성</h3>
+              <p>
+                정적 화면, FastAPI WAS, MariaDB를 분리해 요청 흐름과 데이터 저장
+                구조를 구성하고, Cloudflare Tunnel을 통해 외부에서 접속하는
+                흐름까지 실습했습니다.
+              </p>
+            </li>
+            <li>
+              <h3>FastAPI + MariaDB 기반 데이터 관리 기능 구현</h3>
+              <p>
+                CRUD 흐름에 맞춰 요청 처리 구조를 만들고 SQL 실행, 응답 상태
+                코드, JSON 데이터 구조, 화면과 서버의 연동 방식을 정리했습니다.
+              </p>
+            </li>
+            <li>
+              <h3>Nginx/Uvicorn/systemd 기반 FastAPI 배포 환경 구성</h3>
+              <p>
+                Uvicorn으로 FastAPI 앱을 실행하고 Nginx를 통해 요청을 전달하며,
+                systemd 서비스로 서버 프로세스를 관리하는 흐름을 학습했습니다.
+              </p>
+            </li>
+            <li>
+              <h3>YOLO 모델 웹 데모 배포 경험</h3>
+              <p>
+                YOLO 모델을 웹 화면에서 확인할 수 있는 데모 형태로 구성하고,
+                FastAPI 기반 서버와 배포 환경을 연결하는 흐름을 실습했습니다.
+              </p>
+            </li>
+            <li>
+              <h3>GAN 기반 이미지 생성/변환 모델 학습</h3>
+              <p>
+                pix2pix와 StyleGAN을 중심으로 이미지 변환과 생성 모델의 구조를
+                학습하고, segmentation 및 object detection 모델까지 함께
+                공부하며 AI 모델 결과를 서비스 데이터로 연결할 수 있는 가능성을
+                학습하고 있습니다.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="resume-section" aria-labelledby="skills-title">
+          <h2 id="skills-title" class="section-title">기술 스택</h2>
+          <div class="skill-table">
+            <div class="skill-row">
+              <strong>Language</strong>
+              <p>Python, JavaScript, SQL</p>
+            </div>
+            <div class="skill-row">
+              <strong>Backend</strong>
+              <p>FastAPI</p>
+            </div>
+            <div class="skill-row">
+              <strong>Database</strong>
+              <p>MySQL, MariaDB</p>
+            </div>
+            <div class="skill-row">
+              <strong>Infra</strong>
+              <p>
+                Linux, Nginx, Uvicorn, systemd, AWS Lightsail, Cloudflare Tunnel,
+                Docker, UTM
+              </p>
+            </div>
+            <div class="skill-row">
+              <strong>AI/CV</strong>
+              <p>
+                PyTorch, GAN, pix2pix, StyleGAN, YOLO, Segmentation, Object
+                Detection, OpenCV, Pandas
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="resume-section" aria-labelledby="projects-title">
+          <h2 id="projects-title" class="section-title">프로젝트</h2>
+          <div class="project-list">
+            <article class="project-item">
+              <div class="project-heading">
+                <h3>3-Tier 웹 서비스 및 Cloudflare Tunnel 배포 실습</h3>
+                <p>FastAPI, MariaDB, Nginx, Uvicorn, Cloudflare Tunnel</p>
+              </div>
+              <ul>
+                <li>
+                  프론트 화면, FastAPI WAS, MariaDB를 분리한 3-Tier 구조로 요청
+                  흐름을 설계하고 구현했습니다.
+                </li>
+                <li>
+                  Nginx reverse proxy와 Cloudflare Tunnel을 연결하며 외부 접속
+                  및 배포 환경의 기본 단계를 정리했습니다.
+                </li>
+              </ul>
+            </article>
+
+            <article class="project-item">
+              <div class="project-heading">
+                <h3>FastAPI 기반 데이터 관리 서비스</h3>
+                <p>Python, FastAPI, JavaScript, SQL</p>
+              </div>
+              <ul>
+                <li>
+                  데이터 생성, 조회, 수정, 삭제 흐름에 맞춘 서버 기능을 구현하고
+                  화면 이벤트와 비동기 요청을 연결했습니다.
+                </li>
+                <li>
+                  SQL 실행 결과, 예외 상황, 응답 메시지를 확인하며 요청/응답
+                  구조를 개선했습니다.
+                </li>
+              </ul>
+            </article>
+
+            <article class="project-item">
+              <div class="project-heading">
+                <h3>YOLO 모델 웹 데모 배포 실습</h3>
+                <p>YOLO, FastAPI, JavaScript, Nginx</p>
+              </div>
+              <ul>
+                <li>
+                  YOLO 모델 결과를 웹 화면에서 확인할 수 있는 데모 형태로
+                  구성했습니다.
+                </li>
+                <li>
+                  FastAPI 서버와 정적 화면을 연결하고, Nginx 기반 배포 흐름을
+                  점검했습니다.
+                </li>
+              </ul>
+            </article>
+
+            <article class="project-item">
+              <div class="project-heading">
+                <h3>생성형 AI 및 컴퓨터 비전 모델 학습</h3>
+                <p>GAN, pix2pix, StyleGAN, PyTorch, OpenCV</p>
+              </div>
+              <ul>
+                <li>
+                  pix2pix와 StyleGAN을 중심으로 이미지 생성/변환 모델의 구조와
+                  학습 흐름을 공부했습니다.
+                </li>
+                <li>
+                  segmentation, object detection 모델도 함께 학습하며 AI 모델
+                  출력이 서비스에서 사용 가능한 데이터가 되려면 어떤 후처리와
+                  검증이 필요한지 학습하고 있습니다.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
