@@ -236,6 +236,23 @@ ol {
   font-weight: 800;
 }
 
+.military-line {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 16px;
+  align-items: center;
+  margin-top: 24px;
+  padding: 10px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: #334155;
+}
+
+.military-line strong {
+  color: var(--blue-deep);
+  font-size: 13px;
+}
+
 .summary-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -256,6 +273,7 @@ ol {
 }
 
 .summary-item h3,
+.credential-item h3,
 .experience-list h3,
 .project-item h3 {
   color: #111827;
@@ -280,6 +298,30 @@ ol {
 .summary-item li::marker,
 .project-item li::marker {
   color: var(--blue);
+}
+
+.credential-list {
+  border-top: 1px solid var(--line);
+}
+
+.credential-item {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  gap: 22px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.credential-label {
+  margin-bottom: 4px;
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.credential-item p:not(.credential-label) {
+  color: #475569;
 }
 
 .experience-list {
@@ -422,6 +464,11 @@ ol {
     grid-template-columns: 1fr;
   }
 
+  .credential-item {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
   .project-heading {
     grid-template-columns: 1fr;
     gap: 2px;
@@ -489,6 +536,11 @@ ol {
     margin-top: 28px;
   }
 
+  .military-line {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
   .experience-list li {
     grid-template-columns: 30px minmax(0, 1fr);
     column-gap: 10px;
@@ -503,6 +555,10 @@ ol {
   .skill-row {
     grid-template-columns: 1fr;
     gap: 2px;
+  }
+
+  .credential-item {
+    padding: 12px 0;
   }
 }
 
@@ -595,6 +651,7 @@ ol {
     gap: 7mm;
   }
 
+  .credential-item,
   .project-item,
   .experience-list li {
     break-inside: avoid;
