@@ -32,14 +32,14 @@
       name="twitter:image"
       content="https://profile.radish-mu.cloud/static/img/og-cover.png"
     />
-    <link rel="stylesheet" href="static/css/style.css?v=20260619-1" />
-    <script defer src="static/js/app.js?v=20260619-1"></script>
+    <link rel="stylesheet" href="static/css/style.css?v=20260622-2" />
+    <script defer src="static/js/app.js?v=20260622-2"></script>
   </head>
   <body>
     <div class="page-shell">
       <main class="resume-paper" aria-label="신무결 개발자 이력서">
         <div class="document-actions">
-          <p class="document-note">신무결 이력서 | 1 / 2</p>
+          <p class="document-note">신무결 이력서</p>
           <button class="print-button" type="button" data-print-button>
             PDF 저장
           </button>
@@ -94,10 +94,10 @@
           <div class="intro-copy">
             <p>
               마이스터고에서 생성형 AI와 컴퓨터 비전 모델을 학습한 경험을
-              바탕으로 웹 백엔드와 서버 배포를 함께 익히고 있는 개발자
-              지망생입니다. GAN 모델을 중심으로 pix2pix, StyleGAN 같은 이미지
-              생성/변환 모델을 공부했고, segmentation과 object detection 모델도
-              함께 학습했습니다. Field-S에서 6개월간 AI 개발자로 근무하며 GPU
+              바탕으로 웹 백엔드와 서버 배포 역량을 확장하고 있는 개발자입니다.
+              GAN 모델을 중심으로 pix2pix, StyleGAN 같은 이미지 생성/변환 모델을
+              공부했고, segmentation과 object detection 모델도 함께
+              학습했습니다. Field-S에서 6개월간 AI 개발자로 근무하며 GPU
               서버에서 대용량 데이터와 멀티 GPU 환경을 경험했습니다.
             </p>
             <p>
@@ -105,7 +105,7 @@
               접근할 수 있는 서비스가 되려면 어떤 백엔드 구조와 배포 환경이
               필요한지에 집중하고 있습니다. FastAPI 기반 서버 구현,
               MariaDB/MySQL 데이터베이스, JavaScript를 이용한 화면 연동을
-              실습하며 서비스의 기본 흐름을 익혔습니다.
+              구현하며 서비스의 기본 흐름을 익혔습니다.
             </p>
             <p>
               Linux 서버 환경에서는 Nginx, Uvicorn, systemd를 이용한 FastAPI
@@ -158,7 +158,7 @@
                 <li>GAN, pix2pix, StyleGAN 기반 생성형 AI 학습</li>
                 <li>Segmentation, object detection 모델 학습</li>
                 <li>
-                  PyTorch, OpenCV, Pandas를 이용한 모델 실습 및 데이터 처리
+                  PyTorch, OpenCV, Pandas를 이용한 모델 구현 및 데이터 처리
                 </li>
               </ul>
             </article>
@@ -229,11 +229,19 @@
               </p>
             </li>
             <li>
+              <h3>치과 협업 부정교합 파악 AI 개발</h3>
+              <p>
+                치과에서 제공받은 구강 사진 데이터를 직접 라벨링하고 학습해,
+                instance segmentation과 classification 기반으로 치아 영역을
+                인식하고 부정교합 여부를 파악하는 AI를 개발했습니다.
+              </p>
+            </li>
+            <li>
               <h3>Front-WAS-DB 3-Tier 웹 서비스 구축 및 외부 접속 구성</h3>
               <p>
                 정적 화면, FastAPI WAS, MariaDB를 분리해 요청 흐름과 데이터 저장
-                구조를 구성하고, Cloudflare Tunnel을 통해 외부에서 접속하는
-                흐름까지 실습했습니다.
+                구조를 구성하고, Cloudflare Tunnel을 통해 외부 접속 흐름을
+                구축했습니다.
               </p>
             </li>
             <li>
@@ -247,16 +255,7 @@
               <h3>YOLO 모델 웹 데모 배포 경험</h3>
               <p>
                 YOLO 모델을 웹 화면에서 확인할 수 있는 데모 형태로 구성하고,
-                FastAPI 기반 서버와 배포 환경을 연결하는 흐름을 실습했습니다.
-              </p>
-            </li>
-            <li>
-              <h3>GAN 기반 이미지 생성/변환 모델 학습</h3>
-              <p>
-                pix2pix와 StyleGAN을 중심으로 이미지 변환과 생성 모델의 구조를
-                학습하고, segmentation 및 object detection 모델까지 함께
-                공부하며 AI 모델 결과를 서비스 데이터로 연결할 수 있는 가능성을
-                학습하고 있습니다.
+                FastAPI 기반 서버와 배포 환경을 연결하는 흐름을 구축했습니다.
               </p>
             </li>
           </ol>
@@ -287,8 +286,9 @@
             <div class="skill-row">
               <strong>AI/CV</strong>
               <p>
-                PyTorch, GAN, pix2pix, StyleGAN, YOLO, Segmentation, Object
-                Detection, OpenCV, Pandas, GPU Server, Multi-GPU
+                PyTorch, GAN, pix2pix, StyleGAN, YOLO, Instance Segmentation,
+                Classification, Object Detection, OpenCV, Pandas, GPU Server,
+                Multi-GPU
               </p>
             </div>
           </div>
@@ -299,7 +299,7 @@
           <div class="project-list">
             <article class="project-item">
               <div class="project-heading">
-                <h3>3-Tier 웹 서비스 및 Cloudflare Tunnel 배포 실습</h3>
+                <h3>3-Tier 웹 서비스 및 Cloudflare Tunnel 배포</h3>
                 <p>FastAPI, MariaDB, Nginx, Uvicorn, Cloudflare Tunnel</p>
               </div>
               <ul>
@@ -333,7 +333,74 @@
 
             <article class="project-item">
               <div class="project-heading">
-                <h3>YOLO 모델 웹 데모 배포 실습</h3>
+                <h3>부정교합 파악 보조 AI 모바일 앱</h3>
+                <p>Instance Segmentation, Classification, PyTorch, OpenCV</p>
+              </div>
+              <ul>
+                <li>
+                  치과와 협업해 구강 사진 데이터를 전달받고, 치아 단위 인식을
+                  위한 라벨링과 모델 학습을 직접 진행했습니다.
+                </li>
+                <li>
+                  instance segmentation과 classification을 활용해 촬영된 치아
+                  사진에서 부정교합 여부를 파악할 수 있도록 보조하는 AI를
+                  구현했습니다.
+                </li>
+              </ul>
+              <div
+                class="project-gallery"
+                aria-label="부정교합 파악 보조 AI 모바일 앱 이미지"
+              >
+                <button
+                  class="project-gallery-item"
+                  type="button"
+                  data-lightbox-item
+                  data-lightbox-src="static/img/01_tooth_labeling_result.png"
+                >
+                  <img
+                    src="static/img/01_tooth_labeling_result.png"
+                    alt="부정교합 파악 보조 AI 모바일 앱 메인 화면"
+                  />
+                </button>
+                <button
+                  class="project-gallery-item"
+                  type="button"
+                  data-lightbox-item
+                  data-lightbox-src="static/img/02_tooth_system_flow.png"
+                >
+                  <img
+                    src="static/img/02_tooth_system_flow.png"
+                    alt="구강 사진 촬영 및 업로드 화면"
+                  />
+                </button>
+                <button
+                  class="project-gallery-item"
+                  type="button"
+                  data-lightbox-item
+                  data-lightbox-src="static/img/03_mobile_app_release.png"
+                >
+                  <img
+                    src="static/img/03_mobile_app_release.png"
+                    alt="치아 인식 및 인스턴스 세그멘테이션 결과 화면"
+                  />
+                </button>
+                <button
+                  class="project-gallery-item"
+                  type="button"
+                  data-lightbox-item
+                  data-lightbox-src="static/img/04_mobile_usage_scene.png"
+                >
+                  <img
+                    src="static/img/04_mobile_usage_scene.png"
+                    alt="부정교합 분류 결과 화면"
+                  />
+                </button>
+              </div>
+            </article>
+
+            <article class="project-item">
+              <div class="project-heading">
+                <h3>YOLO 모델 웹 데모 배포</h3>
                 <p>YOLO, FastAPI, JavaScript, Nginx</p>
               </div>
               <ul>
@@ -368,6 +435,48 @@
           </div>
         </section>
       </main>
+    </div>
+
+    <div class="lightbox" data-lightbox hidden>
+      <div class="lightbox-backdrop" data-lightbox-close></div>
+      <figure
+        class="lightbox-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-label="프로젝트 이미지 확대 보기"
+      >
+        <button
+          class="lightbox-close"
+          type="button"
+          data-lightbox-close
+          aria-label="닫기"
+        >
+          &times;
+        </button>
+        <img src="" alt="" data-lightbox-image />
+        <figcaption class="lightbox-caption">
+          <button
+            class="lightbox-nav"
+            type="button"
+            data-lightbox-prev
+            aria-label="이전 이미지"
+          >
+            &lsaquo;
+          </button>
+          <span data-lightbox-caption></span>
+          <span>
+            <span data-lightbox-count></span>
+            <button
+              class="lightbox-nav"
+              type="button"
+              data-lightbox-next
+              aria-label="다음 이미지"
+            >
+              &rsaquo;
+            </button>
+          </span>
+        </figcaption>
+      </figure>
     </div>
   </body>
 </html>
