@@ -414,6 +414,13 @@ ol {
   white-space: nowrap;
 }
 
+.project-stack {
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
 .project-item ul {
   display: grid;
   gap: 4px;
