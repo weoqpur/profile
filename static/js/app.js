@@ -6,8 +6,17 @@
       return;
     }
 
-    printButton.addEventListener("click", function () {
-      window.print();
+    printButton.addEventListener("click", async function () {
+      printButton.disabled = true;
+      try {
+        await document.fonts.ready;
+        await Promise.all(Array.from(document.images, function (image) {
+          return image.decode().catch(function () {});
+        }));
+        window.print();
+      } finally {
+        printButton.disabled = false;
+      }
     });
   }
 
