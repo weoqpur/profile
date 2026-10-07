@@ -471,6 +471,12 @@ h1, h2, h3, .intro-highlight {
   font-weight: 700;
 }
 
+.section-title {
+  font-size: 21px;
+  font-weight: 750;
+  color: #0f172a;
+}
+
 .project-item ul {
   display: grid;
   gap: 4px;
@@ -844,7 +850,8 @@ body.is-lightbox-open {
 
   .section-title {
     margin-bottom: 3mm;
-    font-size: 13pt;
+    font-size: 14pt;
+    font-weight: 750;
     break-after: avoid;
   }
 
